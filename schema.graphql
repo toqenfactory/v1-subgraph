@@ -1,0 +1,8 @@
+type TokenCreated @entity(immutable: true) {
+  id: Bytes!
+  tokenAddress: Bytes! # address
+  creator: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
